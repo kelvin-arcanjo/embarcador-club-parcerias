@@ -7,6 +7,9 @@
 }
 
 :root {
+
+    --altura-header: 70px;
+
     --cor-primaria: #0B3D67; 
     --cor-secundaria: #1E6FB5;    
     --cor-cta: #F5A623;           /* Amarelo CTA (Botões de Ação) */
@@ -23,4 +26,77 @@
 
     /* Arredondamento de Bordas */
     --raio-borda: 8px;            /* Border-radius para cards, botões e inputs */
+}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor-primaria);
+    padding: var(--espaco-sm) var(--espaco-md);
+    z-index: 1000;
+}
+
+.main-header .nav-menu {
+    display: none;
+}
+
+.hero-section {
+  padding-top: calc(var(--altura-header) + var(--espaco-md));
+}
+
+.hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: transparent;
+    border: 1px solid var(--cor-branca);
+    border-radius: var(--raio-borda);
+    padding: var(--espaco-sm);
+    cursor: pointer;
+}
+
+.hamburguer:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.hamburguer-bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: var(--cor-branca);
+    border-radius: var(--raio-borda);
+}
+
+.logo a {
+    font-weight: bold;
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: var(--cor-cta);
+}
+
+.btn-header {
+    background-color: var(--cor-cta);
+    color: var(--cor-branca);
+    border: none;
+    padding: var(--espaco-sm) var(--espaco-md);
+    border-radius: var(--raio-borda);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-header:hover {
+    font-weight: 600;
 }
