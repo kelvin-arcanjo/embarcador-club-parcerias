@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embarcador Club S_Natação Infantil</title>
+</head>
+<body>
+    <header class="main-header">
+        <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <div class="logo">
+            <a href="#hero">Embarcador <span>Club S</span></a>
+        </div>
+        <nav class="nav-menu" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#beneficios">Vantagens</a></li>
+                <li><a href="#simulador-parceria">Simulador</a></li>
+                <li><a href="#contacto-localizacao">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#simulador-parceria" class="btn-header">Pedir Proposta</a>
+    </header> 
+
+    <!-- SECÇÃO 1: HERO -->
+
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <h1>Parcerias Que Transformam Pequenos No Futuro!</h1>
+            <p>Programas de natação adaptados para creches, focados no desenvolvimento físico e motor.</p>
+            <a href="#simulador-parceria" class="btn-primary">Simular Parceria Agora</a>
+        </div>
+    </section>
+
+    <!-- SECÇÃO: BENEFÍCIOS (5 PILARES DE VALOR) -->
+
+    <section id="beneficios" class="beneficios-section">
+        <div class="beneficios-container">
+            <h2>Porquê Fazer Parceria Com A Nossa Equipa?</h2>
+
+            <div class="grid-beneficios">
+
+               <!-- Card 1 -->
+                <article class="card-beneficio">
+                    <div class="card-icone"><!-- Placeholder para Ícone SVG --></div>
+                    <h3>Segurança em 1º Lugar</h3>
+                    <p>Ambiente monitorizado, água tratada e protocolos rigorosos para a proteção total dos alunos.</p>
+                </article> 
+
+                <!-- Card 2 -->
+                <article class="card-beneficio">
+                    <div class="card-icone"><!-- Placeholder para Ícone SVG --></div>
+                    <h3>Professores Especializados</h3>
+                    <p>Equipa qualificada em natação infantil e desenvolvimento motor para a primeira infância.</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-beneficio">
+                    <div class="card-icone"><!-- Placeholder para Ícone SVG --></div>
+                    <h3>Desenvolvimento Completo</h3>
+                    <p>Estímulo físico, cognitivo e social integrado às necessidades pedagógicas da creche.</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card-beneficio">
+                    <div class="card-icone"><!-- Placeholder para Ícone SVG --></div>
+                    <h3>Diversão Que Educa</h3>
+                    <p>Metodologia lúdica que transforma o contacto com a água numa experiência divertida e enriquecedora.</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card-beneficio">
+                    <div class="card-icone"><!-- Placeholder para Ícone SVG --></div>
+                    <h3>Atividades Adaptadas</h3>
+                    <p>Aulas estruturadas de acordo com a faixa etária e o nível de desenvolvimento de cada turma.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECÇÃO 2: SIMULADOR DE PARCERIA -->
+
+    <section id="simulador-parceria" class="simulador-section">
+        <div class="simulador-container">
+            <h2>Simulador de Parcerias para Creches</h2>
+
+            <form action="" id="form-parceria">
+                <div class="form-group">
+                    <label for="faixa-alunos">Quantidade de Alunos Estimada:</label>
+                    <select name="faixaAlunos" id="faixa-alunos">
+                        <option value="" disabled selected>Selecione uma faixa...</option>
+                        <option value="ate20">Até 20 alunos</option>
+                        <option value="de20a50">20 a 50 alunos</option>
+                        <option value="mais50">Mais de 50 alunos</option>
+                    </select>
+                </div>
+
+                <!-- Card de Benefícios-->
+
+                <article id="card-beneficios" class="card-resultado" aria-live="polite">
+                    <h3 id="beneficio-titulo"><!-- Título do Benefício --></h3>
+                    <p id="beneficio-texto" class="texto-placeholder">
+                        Selecione a quantidade de alunos para visualizar as vantagens da parceria.
+                    </p>
+                </article>
+
+                <div class="form-group">
+                    <label for="nome-creche">Nome da Creche:</label>
+                    <input type="text" id="nome-creche" name="nomeCreche" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nome-responsavel">Nome do Responsável:</label>
+                    <input type="text" id="nome-responsavel" name="nomeResponsavel" placeholder="Ex: Maria Silva (Diretora)" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="contacto-whatsapp">Contacto WhatsApp:</label>
+                    <input type="tel" id="contacto-whatsapp" name="contactoWhatsapp" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Solicitar via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECÇÃO 3: CONTACTO & LOCALIZAÇÃO -->
+
+    <section id="contacto-localizacao" class="contacto-localizacao">
+        <div class="contacto-container">
+            <h2>Nossa Localização & Contactos</h2>
+
+            <address class="info-atendimento">
+                <p class="local-nome"><strong>Embarcador Club S</strong></p>
+                <p class="local-desc">Um espaço preparado para receber e cuidar das crianças com excelência.</p>
+                <p class="telefones">
+                    Contactos: 
+                    <a href="tel:+244925220846">925 220 846</a> | 
+                    <a href="tel:+244928879495">928 879 495</a>
+                </p>
+            </address>
+        </div>
+    </section>
+</body>
+</html>
