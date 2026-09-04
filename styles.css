@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #0B3D67; 
+    --cor-secundaria: #1E6FB5;    
+    --cor-cta: #F5A623;           /* Amarelo CTA (Botões de Ação) */
+    --cor-detalhe: #4FC3F7;
+
+    --cor-branca: #FFFFFF;        /* Texto claro e fundos de cards */
+    --cor-texto-escuro: #1A1A1A;  /* Texto principal em fundos claros */
+    --cor-fundo-leve: #F4F7F9;    /* Fundo de secções secundárias */
+
+    /* Espaçamentos Padronizados */
+    --espaco-sm: 8px;             /* Espaçamento pequeno (Gaps / Padding interno) */
+    --espaco-md: 16px;            /* Espaçamento médio (Margens / Padding padrão) */
+    --espaco-lg: 32px;            /* Espaçamento grande (Containers / Secções) */
+
+    /* Arredondamento de Bordas */
+    --raio-borda: 8px;            /* Border-radius para cards, botões e inputs */
+}
