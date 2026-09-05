@@ -1,3 +1,12 @@
+// Referências globais dos elementos do DOM;
+const selectFaixaAlunos = document.getElementById("faixa-alunos");
+const elementoTitulo = document.getElementById("beneficio-titulo");
+const elementoTexto = document.getElementById("beneficio-texto");
+const inputNomeCreche = document.getElementById("nome-creche");
+const inputNomeResponsavel = document.getElementById("nome-responsavel");
+const inputContactoWhatsapp = document.getElementById("contacto-whatsapp");
+const formSimulador = document.getElementById("form-parceria"); 
+
 const PLANOS_PARCERIA = {
     ate20: {
         titulo: "Plano Turma Inicial (Até 20 alunos)",
@@ -21,9 +30,6 @@ const PLANOS_PARCERIA = {
 
 // Função de callback acionada na mudança do select;
 
-const elementoTitulo = document.getElementById("beneficio-titulo");
-const elementoTexto = document.getElementById("beneficio-texto");
-
 function actualizarSimulador(evento) {
     const faixaSelecionada = evento.target.value;
 
@@ -40,5 +46,6 @@ function actualizarSimulador(evento) {
     elementoTexto.textContent = plano.descricaoCard ;
 }
 
-const selectFaixaAlunos = document.getElementById("faixa-alunos");
 selectFaixaAlunos.addEventListener("change", actualizarSimulador);
+
+
