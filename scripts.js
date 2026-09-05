@@ -18,3 +18,24 @@ const PLANOS_PARCERIA = {
         mensagemWhatsapp: "Quero negociar o *Plano Escala VIP (Mais de 50 alunos)* com proposta personalizada e suporte prioritário."
     }
 }
+
+// Função de callback acionada na mudança do select;
+
+const elementoTitulo = document.getElementById("beneficio-titulo");
+const elementoTexto = document.getElementById("beneficio-texto");
+
+function actualizarSimulador(evento) {
+    const faixaSelecionada = evento.target.value;
+
+    if (!faixaSelecionada || !PLANOS_PARCERIA[faixaSelecionada]) {
+        elementoTitulo.textContent = "";
+        elementoTexto.textContent = "";
+
+        return;
+    }
+
+    const plano = PLANOS_PARCERIA[faixaSelecionada];
+
+    elementoTitulo.textContent = plano.titulo;
+    elementoTexto.textContent = plano.descricaoCard ;
+}
