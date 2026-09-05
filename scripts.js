@@ -48,4 +48,40 @@ function actualizarSimulador(evento) {
 
 selectFaixaAlunos.addEventListener("change", actualizarSimulador);
 
+function lidarComSubmit(evento) {
+    evento.preventDefault();
+
+    //Capturar os valores atuais dos campos;
+
+    const faixa = selectFaixaAlunos.value;
+    const nomeCreche = inputNomeCreche.value.trim();
+    const nomeResponsavel = inputNomeResponsavel.value.trim();
+    const contactoWhatsapp = inputContactoWhatsapp.value.trim();
+
+    //Validação extra de segurança;
+
+    if (!faixa || !PLANOS_PARCERIA[faixa]) {
+        alert("Por favor, selecione uma faixa de alunos válida.");
+
+        return;
+    }
+
+    //Montagem da mensagem final;
+
+    const plano = PLANOS_PARCERIA[faixa];
+    const mensagemTexto = `Olá! Sou *${nomeResponsavel}*, representante da creche *${nomeCreche}*, (Contacto: ${contactoWhatsapp}).\n\n${plano.mensagemWhatsapp}`
+
+    //Codificar a mensagem pra URL;
+
+    const mensagemCodificada = encodeURIComponent(mensagemTexto);
+
+    //Redirecionar para a API do WhatsApp;
+
+    const numeroWhatsApp = "244925220846";
+    window.location.href = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+}
+
+//Conectar o evento de submit do formulário à função de callback;
+
+formSimulador.addEventListener("submit", lidarComSubmit);
 
