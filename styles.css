@@ -165,3 +165,39 @@ body {
   flex-direction: column;
   gap: var(--espaco-md);
 }
+
+.card-beneficio {
+    background-color: var(--cor-branca);
+    padding: var(--espaco-md);
+    border-radius: var(--raio-borda);
+    border-left: 4px solid var(--cor-detalhe);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-beneficio:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-left-color: var(--cor-primaria);
+}
+
+.card-icone {
+    width: 24px;
+    height: 24px;
+    background-color: var(--cor-detalhe);
+    border-radius: 50%;
+    margin-bottom: var(--espaco-sm);
+}
+
+.card-beneficio h3 {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    margin-bottom: var(--espaco-sm);
+}
+
+.card-beneficio p {
+    color: var(--cor-texto-escuro);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
