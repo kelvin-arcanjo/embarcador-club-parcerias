@@ -39,3 +39,6 @@ function actualizarSimulador(evento) {
     elementoTitulo.textContent = plano.titulo;
     elementoTexto.textContent = plano.descricaoCard ;
 }
+
+const selectFaixaAlunos = document.getElementById("faixa-alunos");
+selectFaixaAlunos.addEventListener("change", actualizarSimulador);
