@@ -49,6 +49,13 @@ body {
     display: none;
 }
 
+p#subtitulo {
+    font-size: 1.9rem;
+    color: var(--cor-fundo-leve);
+    
+    text-align: center;
+}
+
 .hamburguer {
     display: flex;
     flex-direction: column;
@@ -122,17 +129,35 @@ body {
    ========================================================================== */
 
 .hero-section {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branca);
   padding-top: calc(var(--altura-header) + var(--espaco-lg));
   padding-bottom: var(--espaco-lg);
   padding-left: var(--espaco-md);
   padding-right: var(--espaco-md);
-  background-color: var(--cor-secundaria);
-  color: var(--cor-branca);
+  margin-top: 50px;
   text-align: center;
-}  
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icone-ondas {
+  display: block;             
+  width: 40px;              
+  height: auto;  
+  color: var(--cor-detalhe);  
+  margin-top: var(--espaco-sm);        
+}
 
 .hero-container h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  padding: var(--espaco-md);
   line-height: 1.3;
   margin-bottom: var(--espaco-md);
 }
