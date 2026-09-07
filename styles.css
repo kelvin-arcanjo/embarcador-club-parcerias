@@ -8,7 +8,7 @@
 
 :root {
 
-    --altura-header: 70px;
+    --altura-header: 210px;
 
     --cor-primaria: #0B3D67; 
     --cor-secundaria: #1E6FB5;    
@@ -130,12 +130,17 @@ p#subtitulo {
 
 .hero-section {
   background-color: var(--cor-secundaria);
+  background-image: 
+    linear-gradient(rgba(10, 37, 64, 0.75), rgba(10, 37, 64, 0.75)), 
+    url('imagens/childrens.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--cor-branca);
   padding-top: calc(var(--altura-header) + var(--espaco-lg));
   padding-bottom: var(--espaco-lg);
   padding-left: var(--espaco-md);
   padding-right: var(--espaco-md);
-  margin-top: 50px;
   text-align: center;
 }
 
