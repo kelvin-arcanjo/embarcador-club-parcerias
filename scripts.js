@@ -75,6 +75,9 @@ function lidarComSubmit(evento) {
 
     const mensagemCodificada = encodeURIComponent(mensagemTexto);
 
+    // Limpa o formulário no DOM antes de redirecionar
+    formSimulador.reset();
+
     //Redirecionar para a API do WhatsApp;
 
     const numeroWhatsApp = "244925220846";
