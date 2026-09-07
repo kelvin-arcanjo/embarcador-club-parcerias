@@ -231,3 +231,82 @@ p#subtitulo {
     line-height: 1.4;
 }
 
+/* ==========================================================================
+   Seção: Simulador de Parceria
+   ========================================================================== */
+
+.simulador-section {
+    padding: var(--espaco-lg);
+    background-color: var(--cor-cta);
+}  
+
+.simulador-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--cor-branca);
+    padding: var(--espaco-lg);
+    border-radius: var(--raio-borda);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.simulador-container h2 {
+    border-bottom: 1.7px dashed var(--cor-cta);
+    margin-bottom: var(--espaco-lg);
+}
+
+/* Formulário e Grupos de Input */
+
+#form-parceria {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    background-color: var(--cor-branca);
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    transition: border-color 0.2s ease , box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--cor-primaria, #007bff);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--cor-detalhe);
+    color: #000;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.15s ease ,  background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
