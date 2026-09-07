@@ -310,3 +310,69 @@ p#subtitulo {
   transform: translateY(0);
 }
 
+/* ==========================================================================
+   Footer (Contacto & Localização)
+   ========================================================================== */
+
+ .contacto-localizacao {
+    background-color: var(--cor-branca);
+    color: var(--cor-secundaria);
+    padding: var(--espaco-lg , 2rem) var(--espaco-md , 1rem);
+    border-top: 4px solid var(--cor-detalhe);
+ }  
+
+ .contacto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ .contacto-localizacao h2 {
+    color: #00000088;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    text-align: center;
+ }
+
+
+ .info-atendimento {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    gap: 0.35rem;
+ }
+
+.local-desc, .telefones {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+ .telefones a {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+ }
+
+ .telefones a:hover {
+  color: #003d80;
+}
+
+#lastp {
+    color: #000;
+    margin-top:var(--espaco-lg);
+    text-align: center;
+}
+
+/* Ícones Twemoji no Footer */
+.twemoji-icon {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.15em;
+  display: inline-block;
+  margin-right: 0.35rem;
+}
+
