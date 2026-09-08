@@ -14,6 +14,11 @@
     --cor-secundaria: #1E6FB5;    
     --cor-cta: #F5A623;           /* Amarelo CTA (Botões de Ação) */
     --cor-detalhe: #4FC3F7;
+    --cor-btn-hover: #e0a800;
+    --cor-contacto-h2: #00000088;
+    --cor-local-desc: #333333;
+    --cor-telefones-a: #0056b3;
+    --cor-telefones-hover: #003d80;
 
     --cor-branca: #FFFFFF;        /* Texto claro e fundos de cards */
     --cor-texto-escuro: #1A1A1A;  /* Texto principal em fundos claros */
@@ -50,9 +55,9 @@ body {
 }
 
 p#subtitulo {
+    font-family: "Merriweather", serif;
     font-size: 1.9rem;
     color: var(--cor-fundo-leve);
-    
     text-align: center;
 }
 
@@ -184,6 +189,7 @@ p#subtitulo {
 }
 
 .beneficios-container h2 {
+  font-family: "Playfair Display", serif;
   text-align: center;
   color: var(--cor-primaria);
   font-size: 1.5rem;
@@ -250,6 +256,7 @@ p#subtitulo {
 }
 
 .simulador-container h2 {
+    font-size: 1.3rem;
     border-bottom: 1.7px dashed var(--cor-cta);
     margin-bottom: var(--espaco-lg);
 }
@@ -283,14 +290,14 @@ p#subtitulo {
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--cor-primaria, #007bff);
+  border-color: var(--cor-primaria);
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
 }
 
 .btn-submit {
     width: 100%;
     background-color: var(--cor-detalhe);
-    color: #000;
+    color: var(--cor-texto-escuro);
     font-weight: 700;
     font-size: 1.05rem;
     padding: 1rem 1.5rem;
@@ -302,7 +309,7 @@ p#subtitulo {
 }
 
 .btn-submit:hover {
-  background-color: #e0a800;
+  background-color: var(--cor-btn-hover);
   transform: translateY(-2px);
 }
 
@@ -317,7 +324,7 @@ p#subtitulo {
  .contacto-localizacao {
     background-color: var(--cor-branca);
     color: var(--cor-secundaria);
-    padding: var(--espaco-lg , 2rem) var(--espaco-md , 1rem);
+    padding: var(--espaco-lg);
     border-top: 4px solid var(--cor-detalhe);
  }  
 
@@ -327,7 +334,7 @@ p#subtitulo {
  }
 
  .contacto-localizacao h2 {
-    color: #00000088;
+    color: var(--cor-contacto-h2);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
@@ -346,33 +353,42 @@ p#subtitulo {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  color: var(--cor-local-desc);
   font-style: italic;
   font-size: 0.95rem;
-  color: #333333;
 }
 
  .telefones a {
-    color: #0056b3;
+    color: var(--cor-telefones-a);
     text-decoration: underline;
     transition: color 0.2s ease;
  }
 
  .telefones a:hover {
-  color: #003d80;
+  color: var(--cor-telefones-hover);
 }
 
 #lastp {
-    color: #000;
+    width: 50%;
+    margin: 0 auto;
+    color: var(--cor-texto-escuro);
+    padding: 5px;
+    border-radius: 8px;
     margin-top:var(--espaco-lg);
     text-align: center;
+    box-shadow: 0px 0px 8px 1px rgba(15, 15, 15, 0.548);
+    
 }
 
-/* Ícones Twemoji no Footer */
-.twemoji-icon {
-  width: 1.1em;
-  height: 1.1em;
-  vertical-align: -0.15em;
-  display: inline-block;
-  margin-right: 0.35rem;
+.icone-localizacao {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.icone-telefone {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
 }
 
