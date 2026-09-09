@@ -54,6 +54,8 @@ body {
     display: none;
 }
 
+/* Fontes decorativas(google fonts): subtítulo*/
+
 p#subtitulo {
     font-family: "Merriweather", serif;
     font-size: 1.9rem;
@@ -187,6 +189,8 @@ p#subtitulo {
   padding: var(--espaco-lg) var(--espaco-md);
   background-color: var(--cor-fundo-leve);
 }
+
+/* Fontes decorativas(google fonts):h2 benefícios */
 
 .beneficios-container h2 {
   font-family: "Playfair Display", serif;
