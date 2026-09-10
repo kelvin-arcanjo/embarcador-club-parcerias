@@ -5,7 +5,8 @@ const elementoTexto = document.getElementById("beneficio-texto");
 const inputNomeCreche = document.getElementById("nome-creche");
 const inputNomeResponsavel = document.getElementById("nome-responsavel");
 const inputContactoWhatsapp = document.getElementById("contacto-whatsapp");
-const formSimulador = document.getElementById("form-parceria"); 
+const formSimulador = document.getElementById("form-parceria");
+ 
 
 const PLANOS_PARCERIA = {
     ate20: {
@@ -87,4 +88,16 @@ function lidarComSubmit(evento) {
 //Conectar o evento de submit do formulário à função de callback;
 
 formSimulador.addEventListener("submit", lidarComSubmit);
+
+// Lógica do Menu Hambúrguer;
+
+const btnHamburguer = document.getElementById('btn-hamburguer');
+const navMenu = document.getElementById('nav-menu');
+
+if (btnHamburguer && navMenu) {
+    btnHamburguer.addEventListener('click' , () => {
+        const estaAberto = navMenu.classList.toggle('activo')
+        btnHamburguer.setAttribute('aria-expanded' , estaAberto)
+    })
+}
 
