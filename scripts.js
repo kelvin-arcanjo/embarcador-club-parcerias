@@ -93,11 +93,21 @@ formSimulador.addEventListener("submit", lidarComSubmit);
 
 const btnHamburguer = document.getElementById('btn-hamburguer');
 const navMenu = document.getElementById('nav-menu');
+const linksNav = document.querySelectorAll(".nav-menu a");
 
 if (btnHamburguer && navMenu) {
     btnHamburguer.addEventListener('click' , () => {
         const estaAberto = navMenu.classList.toggle('activo')
         btnHamburguer.setAttribute('aria-expanded' , estaAberto)
+    })
+
+    // Fechar o menu automaticamente ao clicar em qualquer link interno;
+
+    linksNav.forEach((link) => {
+        link.addEventListener('click' , () => {
+            navMenu.classList.remove("activo")
+            btnHamburguer.setAttribute("aria-expanded" , "false")
+        })
     })
 }
 
