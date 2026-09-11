@@ -186,6 +186,7 @@ p#subtitulo {
   padding-bottom: var(--espaco-lg);
   padding-left: var(--espaco-md);
   padding-right: var(--espaco-md);
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -444,3 +445,81 @@ p#subtitulo {
     vertical-align: middle;
 }
 
+/*Tablet (768 px)*/
+
+@media (min-width: 768px) {
+    .hamburguer {
+        display: none;
+    }
+
+    .main-header {
+        flex-wrap: nowrap;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding: 8px;
+        border-radius: 5px;
+        margin-top: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .grid-beneficios {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .card-beneficio {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* O 5º item (último) ocupa 2 colunas e centraliza */
+  .grid-beneficios .card-beneficio:last-child {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    justify-self: center;
+    width: 100%;
+  }
+
+    .simulador-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .grid-beneficios {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid-beneficios .card-beneficio {
+    grid-column: span 2;
+  }
+
+  .grid-beneficios .card-beneficio:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .grid-beneficios .card-beneficio:nth-child(5) {
+    grid-column: 4 / span 2;
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .simulador-container {
+    max-width: 820px;
+  }
+
+}
