@@ -50,10 +50,6 @@ body {
     z-index: 1000;
 }
 
-.main-header .nav-menu {
-    display: none;
-}
-
 /* Fontes decorativas(google fonts): subtítulo*/
 
 p#subtitulo {
@@ -186,7 +182,6 @@ p#subtitulo {
   padding-bottom: var(--espaco-lg);
   padding-left: var(--espaco-md);
   padding-right: var(--espaco-md);
-  margin-top: 70px;
   text-align: center;
 }
 
@@ -456,8 +451,8 @@ p#subtitulo {
         flex-wrap: nowrap;
     }
 
-    .nav-menu {
-        display: flex !important;
+    .main-header .nav-menu {
+        display: flex;
         position: static;
         width: auto;
         background-color: transparent;
