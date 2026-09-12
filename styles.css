@@ -174,7 +174,7 @@ p#subtitulo {
   background-image: 
     linear-gradient(rgba(10, 37, 64, 0.75), rgba(10, 37, 64, 0.75)), 
     url('imagens/childrens.png');
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   color: var(--cor-branca);
